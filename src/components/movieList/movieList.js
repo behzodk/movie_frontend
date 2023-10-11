@@ -11,11 +11,7 @@ const MovieList = () => {
 
     useEffect(() => {
         getData()
-    }, [])
-
-    useEffect(() => {
-        getData()
-    }, [type])
+    })
 
     const getData = () => {
         const apiUrl = `https://behzod2006.pythonanywhere.com/movies/${type ? type : "popular"}`
