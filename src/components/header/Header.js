@@ -7,7 +7,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 const Header = () => {
-      useEffect(() => {
+      React.useEffect(() => {
         window.addEventListener("scroll", isSticky);
         return () => {
           window.removeEventListener("scroll", isSticky);
