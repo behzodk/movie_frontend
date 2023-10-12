@@ -10,7 +10,7 @@ const Movie = () => {
     useEffect(() => {
       getData();
       window.scrollTo(0, 0);
-    }, [id]);
+    });
   
     const getData = () => {
       // Replace the URL with your own Django backend API endpoint
