@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import "./Header.scss"
 import { Link } from "react-router-dom"
 // import * as React from 'react';
