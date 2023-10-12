@@ -7,6 +7,20 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 const Header = () => {
+      useEffect(() => {
+        window.addEventListener("scroll", isSticky);
+        return () => {
+          window.removeEventListener("scroll", isSticky);
+        };
+      }, []);
+
+      const isSticky = (e) => {
+        const header = document.querySelector(".header");
+        const scrollTop = window.scrollY;
+        scrollTop >= 20
+          ? header.classList.add("is-sticky")
+          : header.classList.add("is-sticky");
+      };
       const [anchorEl, setAnchorEl] = React.useState(null);
       const open = Boolean(anchorEl);
       const handleClick = (event) => {
