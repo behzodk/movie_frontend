@@ -25,7 +25,7 @@ const Home = () => {
 
         fetchMovies();
         console.log(movies)
-    }, []);
+    });
 
     return (
         <>
